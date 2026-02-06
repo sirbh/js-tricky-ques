@@ -1,4 +1,19 @@
+//polyfil
+
+Array.prototype.doubler=function(){
+   return this.map(ele=>2*ele)
+}
+
+
+const arr = [1,2,3,4]
+
+console.log(arr.doubler())
+
+
+
 //application of clousre
+
+
 
 
 function modular_code() {
@@ -38,11 +53,7 @@ function adder(a){
    }
 }
 
-console.log(adder(1)(2)(5)())
 
-const doubler = multiplier(2)
-
-console.log(doubler(2))
 
 function und_null(){
    console.log(typeof(null));
