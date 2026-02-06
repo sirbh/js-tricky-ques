@@ -1,10 +1,30 @@
+
+//remove dublicate from arr
+
+function rmd(arr){
+   return new Set(arr)
+}
+
+console.log(rmd2([1,2,2,2,2,2,4]))
+
+function rmd2(arr){
+   const obj = arr.reduce((acc,val)=>{
+     acc[val]="val"
+     return acc
+   },{})
+  
+   return(Object.keys(obj))
+}
+
+
+
 //string are immutable
 
 const str = "abc"
 
 str[0] = "o"
 
-console.log(str[0])
+// console.log(str[0])
 
 //polyfil
 
@@ -15,7 +35,7 @@ Array.prototype.doubler=function(){
 
 const arr = [1,2,3,4]
 
-console.log(arr.doubler())
+// console.log(arr.doubler())
 
 
 
