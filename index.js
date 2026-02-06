@@ -1,4 +1,13 @@
-obj_imp_meths()
+und_null()
+
+function und_null(){
+   console.log(typeof(null));
+   console.log(typeof(undefined));
+
+   console.log(null==undefined)
+   console.log(null===undefined)
+
+}
 
 function obj_imp_meths(){
    const obj = {
