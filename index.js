@@ -1,3 +1,11 @@
+//string are immutable
+
+const str = "abc"
+
+str[0] = "o"
+
+console.log(str[0])
+
 //polyfil
 
 Array.prototype.doubler=function(){
