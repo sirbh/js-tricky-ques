@@ -1,14 +1,6 @@
 //application of clousre
 
 
-const counter = modular_code()
-
-console.log(counter.getCount())
-counter.increment()
-console.log(counter.getCount())
-counter.decrement()
-console.log(counter.getCount())
-
 function modular_code() {
    let count = 0;
 
@@ -34,6 +26,19 @@ function modular_code() {
 function multiplier(factor){
    return (number)=>factor*number
 }
+
+// currying
+
+function adder(a){
+   return (b)=>{
+      if(b!=undefined){
+         return adder(a+b)
+      }
+      return a
+   }
+}
+
+console.log(adder(1)(2)(5)())
 
 const doubler = multiplier(2)
 
