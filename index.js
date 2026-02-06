@@ -29,6 +29,16 @@ function modular_code() {
    }
 }
 
+// function factory
+
+function multiplier(factor){
+   return (number)=>factor*number
+}
+
+const doubler = multiplier(2)
+
+console.log(doubler(2))
+
 function und_null(){
    console.log(typeof(null));
    console.log(typeof(undefined));
