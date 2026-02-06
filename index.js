@@ -1,4 +1,33 @@
-und_null()
+//application of clousre
+
+
+const counter = modular_code()
+
+console.log(counter.getCount())
+counter.increment()
+console.log(counter.getCount())
+counter.decrement()
+console.log(counter.getCount())
+
+function modular_code() {
+   let count = 0;
+
+   return {
+      getCount() {
+         return count
+      },
+
+      increment() {
+         count++
+      },
+
+      decrement(){
+         if(!(count<0)){
+            --count
+         }
+      }
+   }
+}
 
 function und_null(){
    console.log(typeof(null));
